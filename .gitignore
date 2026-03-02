@@ -14,8 +14,10 @@ xcuserdata/
 *.dSYM
 
 
-## Claude 
+## Markup
 CLAUDE.md
+TODO.md
+
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
