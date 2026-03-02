@@ -13,6 +13,9 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
+
+## Claude 
+CLAUDE.md
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
