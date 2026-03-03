@@ -1,19 +1,18 @@
-//
-//  ContentView.swift
-//  QuietRiot
-//
-//  Created by Mathias Klintebjerg Phillip on 02/03/2026.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var audioApps: [AudioApp] = []
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ForEach(audioApps.prefix(5), id: \.pid){ app in
+                Text(app.name)
+            }
+        }
+        .onAppear{
+            audioApps = AudioManager().getRunningAudioApps()
         }
         .padding()
     }
